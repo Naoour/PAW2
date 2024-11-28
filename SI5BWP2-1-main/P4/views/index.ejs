@@ -1,0 +1,19 @@
+    <% let title ="Template engine Universitas MDP" %>
+    <%= title %>
+
+    <br>
+    <%= caption  %>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>NPM</th>
+        </tr>
+
+        <% data.forEach((element,no) => { %>
+          <tr>
+            <td><%= no+=1 %></td>
+            <td><%= element.npm  %></td>
+          </tr>  
+        <%}); %>
+    </table>
